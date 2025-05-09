@@ -1,140 +1,184 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Portfolio</title>
+  <title>Sunil Anand - DevOps Engineer Portfolio</title>
   <style>
-    /* CSS styles for the portfolio */
     body {
-      font-family: Arial, sans-serif;
-      background-color: black;
-      color: white;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #e6e6e6;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 0;
+      background: linear-gradient(45deg, #1a1a1a, #333);
     }
 
     h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #ff9900;
+      color: #4CAF50;
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
 
     .section {
-      margin-bottom: 40px;
-      text-align: center;
+      background-color: #262626;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
     .section-title {
-      font-weight: bold;
-      color: #ff9900;
-    }
-
-    .section-content {
-      margin-top: 10px;
-    }
-
-    .project {
+      color: #4CAF50;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 10px;
       margin-bottom: 20px;
     }
 
-    .project-title {
-      font-weight: bold;
-      color: #ff9900;
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
     }
 
-    .project-description {
-      margin-top: 5px;
-    }
-
-    .project-tech-stack {
-      margin-top: 10px;
-    }
-
-    .skills-list {
-      list-style-type: none;
-      padding: 0;
-      text-align: center;
-    }
-
-    .skills-list li {
-      display: inline-block;
-      margin: 5px;
-      padding: 5px 10px;
-      background-color: #ff9900;
-      color: black;
+    .skill-item {
+      background-color: #333;
+      padding: 10px;
       border-radius: 5px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .skill-item:hover {
+      transform: translateY(-3px);
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .experience-item {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #444;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #333;
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .contact-info a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>My Portfolio</h1>
-
-  <div class="section">
-    <h2 class="section-title">Personal Information</h2>
-    <div class="section-content">
-      <p><strong>Name:</strong> Sunil Anand</p>
-      <p><strong>Designation:</strong> DevOps Engineer</p>
-      <p><strong>Country:</strong> India</p>
+  <header>
+    <div class="container">
+      <h1>Sunil Anand</h1>
+      <p>Senior DevOps Engineer</p>
     </div>
-  </div>
+  </header>
 
-  <div class="section">
-    <h2 class="section-title">Work Experience</h2>
-    <div class="section-content">
-      <h3>InfraSpace Solutions</h3>
-      <ul>
-        
-      </ul>
-    </div>
-  </div>
+  <div class="container">
+    <section class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p>Experienced DevOps Engineer with expertise in cloud technologies, infrastructure automation, and continuous integration/deployment. Proven track record in implementing and managing cloud solutions across AWS and Google Cloud Platform.</p>
+    </section>
 
-  <div class="section">
-    <h2 class="section-title">Projects</h2>
-    <div class="section-content">
-      <div class="project">
-        <h3 class="project-title">E-commerce Website</h3>
-        <p class="project-description">A fully functional e-commerce website built using Dot Netcore and MySQL as the backend database.</p>
-        <ul class="project-tech-stack">
-          <li>On-Premises servers for hosting the application</li>
-          <li>AWS for cloud services and infrastructure</li>
-          <li>DevOps practices for continuous integration and deployment</li>
-          <li>Kubernetes for container orchestration</li>
-          <li>Azure DevOps for CI/CD pipeline</li>
-        </ul>
+    <section class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">Google Cloud Platform</div>
+        <div class="skill-item">Amazon Web Services</div>
+        <div class="skill-item">Terraform</div>
+        <div class="skill-item">Docker</div>
+        <div class="skill-item">Kubernetes</div>
+        <div class="skill-item">CI/CD</div>
+        <div class="skill-item">Azure DevOps</div>
+        <div class="skill-item">Git</div>
+        <div class="skill-item">Linux</div>
+        <div class="skill-item">Shell Scripting</div>
+        <div class="skill-item">Infrastructure as Code</div>
+        <div class="skill-item">Cloud Networking</div>
       </div>
+    </section>
 
-      <div class="project">
-        <h3 class="project-title">Java Project</h3>
-        <p class="project-description">A Java project involving various tech stacks:</p>
-        <ul class="project-tech-stack">
-          <li>Git and GitHub for version control and source code management</li>
-          <li>Azure DevOps for CI/CD pipeline</li>
-          <li>Maven for building the project</li>
-          <li>SonarQube for code quality checking</li>
-          <li>Docker for containerization</li>
-          <li>OpenShift and Kubernetes for container orchestration</li>
-          <li>GKE, GCP, and AWS for cloud services and networking</li>
-          <li>Terraform for Infrastructure as Code (IaC)</li>
-          <li>Google Monitoring and Observability for monitoring</li>
-        </ul>
+    <section class="section">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="experience-item">
+        <h3>DevOps Engineer - InfraSpace Solutions</h3>
+        <p>• Implemented and managed cloud infrastructure on AWS and GCP</p>
+        <p>• Developed CI/CD pipelines using Azure DevOps and Jenkins</p>
+        <p>• Automated infrastructure deployment using Terraform and Ansible</p>
+        <p>• Managed container orchestration using Kubernetes and Docker</p>
+        <p>• Implemented monitoring and logging solutions</p>
       </div>
-      <!-- Add more projects as needed -->
-    </div>
-  </div>
+    </section>
 
-  <div class="section">
-    <h2 class="section-title">Skills</h2>
-    <div class="section-content">
-      <ul class="skills-list">
-        <li>Google Cloud Platform</li>
-        <li>Amazon Web Services</li>
-        <li>Terraform</li>
-        <li>Infrastructure as Code (IaC)</li>
-        <li>Cloud Computing</li>
-        <li>Cloud Networking</li>
-        <li>CI/CD</li>
-        <li>Containerization</li>
-        <li>Cloud Management</li>
-        <li>Linux (Bash)</li>
-      </ul>
-    </div>
+    <section class="section">
+      <h2 class="section-title">Key Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>E-commerce Platform Migration</h3>
+          <p>Led the migration of an e-commerce platform to cloud infrastructure using:</p>
+          <ul>
+            <li>AWS Cloud Services</li>
+            <li>Kubernetes for container orchestration</li>
+            <li>Azure DevOps for CI/CD pipeline</li>
+            <li>Terraform for infrastructure provisioning</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Java Application Deployment</h3>
+          <p>Implemented modern DevOps practices for a Java application using:</p>
+          <ul>
+            <li>Git and GitHub for version control</li>
+            <li>Maven for building</li>
+            <li>Docker for containerization</li>
+            <li>GCP and AWS for cloud infrastructure</li>
+            <li>Google Monitoring for observability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-info">
+      <h2 class="section-title">Contact Information</h2>
+      <p>Email: <a href="mailto:sunilmsanand@gmail.com">sunilmsanand@gmail.com</a></p>
+      <p>Location: India</p>
+    </section>
   </div>
 </body>
 </html>
